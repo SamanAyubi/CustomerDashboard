@@ -1,0 +1,110 @@
+<!-- <div > -->
+
+
+
+  <!-- </div> -->
+<div class="d-flex flex-nowrap container">
+  <img class= "centered" src="assets/images/blob-small.png" width="1000" height="1000">
+
+  <div class="order-1 p-2 flex-2 ">
+    <div class="btn-div">
+      <button mat-button class="navBtn" color="primary">Products</button>
+      <button mat-button class="navBtn" color="primary">Solution</button>
+      <button mat-button class="navBtn" color="primary">Pricing</button>
+
+      <button mat-stroked-button class="loginClr" color="primary">Login</button>
+      <button mat-raised-button class="navBtn" color="primary">Get Started</button>
+    </div>
+<mat-card class="example-result-card">
+  <mat-card-content>
+    <h2>Eligibility Calculator</h2>
+    <br>
+    <br>
+    <div class="example-label-container">
+      <label id="example-name-label" class="monthly-label">Monthly Income</label>
+    </div>
+    <div class="example-label-container" >
+      <span class="monthly-sublabel">&#8377;</span><label id="example-name-label" class="monthly-sublabel">{{value}}</label>
+    </div>
+    <mat-slider
+        class="example-margin"
+        [disabled]="disabled"
+        [invert]="invert"
+        [max]="max"
+        [min]="min"
+        [step]="step"
+        [thumbLabel]="thumbLabel"
+        [tickInterval]="getSliderTickInterval()"
+        [(ngModel)]="value"
+        [vertical]="vertical"
+        aria-labelledby="example-name-label">
+    </mat-slider>
+    <div class="example-label-container">
+      <label id="example-name-label" class="example-name-label">{{min}}</label>
+      <label class="example-value-label">{{max}}</label>
+    </div>
+  </mat-card-content>
+  <mat-card-content>
+    <div class="example-label-container">
+      <label id="example-name-label" class="monthly-label">Monthly Expense</label>
+    </div>
+    <div class="example-label-container" >
+      <span class="monthly-sublabel">&#8377;</span><label id="example-name-label" class="monthly-sublabel">{{expenseValue}}</label>
+    </div>
+    <mat-slider
+        class="example-margin"
+        [disabled]="disabled"
+        [invert]="invert"
+        [max]="max"
+        [min]="min"
+        [step]="step"
+        [thumbLabel]="thumbLabel"
+        [tickInterval]="getSliderTickInterval()"
+        [(ngModel)]="expenseValue"
+        [vertical]="vertical"
+        aria-labelledby="example-name-label">
+    </mat-slider>
+    <div class="example-label-container" [class]="vertical ? 'example-label-vertical' : 'example-label-horizontal'">
+      <label id="example-name-label" class="example-name-label">{{min}}</label>
+      <label class="example-value-label">{{max}}</label>
+    </div>
+  </mat-card-content>
+<div>
+  <label id="example-name-label" class="example-name-label">Do you have any existing loans?</label>
+<mat-slide-toggle class="alignment" [(ngModel)]="isChecked"></mat-slide-toggle>
+</div>
+<mat-form-field appearance="fill">
+  <mat-label>Repayment Tenure</mat-label>
+  <mat-select [(ngModel)]="selectedValue" name="food">
+    <mat-option *ngFor="let food of foods" [value]="food.value">
+      {{food.viewValue}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+<div>
+  <mat-form-field class="example-form-field" appearance="fill">
+    <mat-label>EMI of existing loan (optional)</mat-label>
+    <input matInput type="text" [(ngModel)]="loanValue">
+  </mat-form-field>
+</div>
+
+</mat-card>
+  </div>
+  <!-- second side  -->
+  <div class="order-2 p-2 flex-1">
+<mat-card class="card-spec">
+  <mat-card-content>
+    <div>
+    <label id="" class="loan-label">Loan Amount</label>
+    <label id="" class="loan-sublabel">&#8377;230490</label>
+    </div>
+    <div>
+      <label id="" class="loan-label">Your emi will be</label>
+      <label id="" class="loan-sublabel">&#8377;276373</label>
+    </div>
+    <button mat-stroked-button class="btnCls" color="primary">Get money</button>
+  </mat-card-content>
+</mat-card>
+</div>
+</div>
+

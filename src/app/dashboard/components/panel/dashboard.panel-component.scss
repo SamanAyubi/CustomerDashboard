@@ -1,0 +1,38 @@
+.image {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+img.backdrop-padding {
+  margin-left: 400px;
+}
+
+img.customer-padding {
+  margin-top: -200px;
+  margin-left: 150px;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: xx-large;
+  font-weight: 700;
+  line-height: 35px;
+  text-decoration: underline;
+}
+
+img.logo-align {
+  margin-left: 120px;
+}
+
+

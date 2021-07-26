@@ -1,0 +1,64 @@
+.half {
+  flex: 1;
+}
+
+.main-container{
+  width: 750px;
+}
+
+.card-container{
+  //margin-left: 200px;
+  margin-top: 100px;
+}
+
+.flex-container{
+  display: flex;
+  flex-direction: row;
+
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column !important;
+  }
+}
+
+.btn-div{
+  padding-left: 320px;
+}
+
+button.mat-focus-indicator.navBtn.mat-raised-button.mat-button-base.mat-primary {
+  border-radius: 20px;
+  background-image: linear-gradient(to bottom right, #8f48be, #663399 );
+  margin-left: 20px;
+}
+
+.navBtn.mat-button.mat-primary, .mat-icon-button.mat-primary, .mat-stroked-button.mat-primary  {
+
+  border-color: #663399 !important;
+  color: #222;
+  border-radius: 20px;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-right: 0px !important;
+}
+
+.navBtn.mat-button.mat-primary:hover , .mat-icon-button.mat-primary:hover , .mat-stroked-button.mat-primary:hover {
+
+  color: #663399;
+}
+
+.loginClr.mat-button.mat-primary, .mat-icon-button.mat-primary, .mat-stroked-button.mat-primary{
+  border-color: #663399 !important;
+  color: #663399;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-right: 0px !important;
+}
+
+
+
+
+
+
